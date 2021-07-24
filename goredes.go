@@ -90,13 +90,16 @@ func main() {
 		case "1":
 			appRedes.startConfig()
 		case "2":
+			// TODO
 			fmt.Println("enrrutar")
 		case "3":
+			// TODO
 			fmt.Println("SALIENDO ...")
 			return
 		case "4":
 			fmt.Println("about dev")
 		default:
+			// TODO
 			fmt.Println("[ENTER] continuar")
 		}
 	}
