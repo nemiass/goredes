@@ -618,8 +618,8 @@ func (g GoRedes) startRouting() {
 
 	switch option_r {
 	case "1":
-		// g.Topology.static()
-		// fmt.Println(ColorYellow + ">> Enrrutamiento `estatic` completo <<" + ColorReset)
+		g.Topology.static()
+		fmt.Println(ColorYellow + ">> Enrrutamiento `estatic` completo <<" + ColorReset)
 		fmt.Println(ColorRed + "OFF: apagado desde el codigo fuente" + ColorReset)
 	case "2":
 		g.Topology.ripV1()
@@ -629,12 +629,12 @@ func (g GoRedes) startRouting() {
 		fmt.Println(ColorYellow + ">> Enrrutamiento `ospf` completo <<" + ColorReset)
 	case "4":
 		fmt.Println(ColorRed + "OFF: apagado desde el codigo fuente" + ColorReset)
-		// g.Topology.eigrp()
-		// fmt.Println(ColorYellow + ">> Enrrutamiento `eigrp` completo <<" + ColorReset)
+		g.Topology.eigrp()
+		fmt.Println(ColorYellow + ">> Enrrutamiento `eigrp` completo <<" + ColorReset)
 	case "5":
 		fmt.Println(ColorRed + "OFF: apagado desde el codigo fuente" + ColorReset)
-		// g.Topology.bgp()
-		// fmt.Println(ColorYellow + ">> Enrrutamiento `bgp` completo <<" + ColorReset)
+		g.Topology.bgp()
+		fmt.Println(ColorYellow + ">> Enrrutamiento `bgp` completo <<" + ColorReset)
 	case "6":
 		return
 	}
